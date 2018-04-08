@@ -1,0 +1,30 @@
+{
+  "name": "converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && mocha --require babel-register --require babel-polyfill test/",
+    "build": "babel ./src -d ./lib --ignore test.js",
+    "test:all": "docker-compose -f ./test/docker-compose.yml up --build"
+  },
+  "bin": "lib/main.js",
+  "files": [
+    "lib/"
+  ],
+  "author": "Andrew de Rozario <andrew_de_rozario@hotmail.com> (https://justintimecoder.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5",
+    "spawn-command": "0.0.2-1"
+  },
+  "dependencies": {
+    "safe-buffer": "^5.1.1",
+    "yargs": "^11.0.0"
+  }
+}

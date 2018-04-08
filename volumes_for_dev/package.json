@@ -1,0 +1,14 @@
+{
+  "name": "volumes_for_dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon --watch server server/index.js"
+  },
+  "author": "Andrew de Rozario <andrew_de_rozario@hotmail.com> (https://justintimecoder.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
