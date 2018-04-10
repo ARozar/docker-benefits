@@ -3,7 +3,7 @@ const { expect } = require('chai'),
 spawn = require('spawn-command'),
 { Buffer } = require('safe-buffer');
 
-describe('CLI tool that creates hashes', function () {
+describe('CLI tool that encodes', function () {
     const text = 'Test Data';
 
     describe('when converting', () => {
